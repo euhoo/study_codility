@@ -1,7 +1,7 @@
 import binary from '../src/bin/binary';
 // намерено не проверяю,если введенное число не число
 
-test('Test 1:нет 0', () => {
+test('Test 1:нет нулей', () => {
   expect(binary(15)).toEqual(0); // 15 = 1111
 });
 
@@ -15,6 +15,6 @@ test('Test 3: вернет значение', () => {
 });
 
 test('Test 4: несколько валидных цепочек нулей', () => {
-  expect(binary(529)).toEqual(4);
-  expect(binary(1041)).toEqual(5);
+  expect(binary(529)).toEqual(4); // 529 = 1000010001
+  expect(binary(1041)).toEqual(5); // 1041 = 10000010001
 });
