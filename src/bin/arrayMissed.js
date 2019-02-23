@@ -1,5 +1,7 @@
 export default (arr) => {
-  const sum = arr.reduce((a, b) => a + b, 0);
+  let sum = 0;
+  // eslint-disable-next-line no-return-assign
+  arr.forEach(item => sum += item);
   const length = arr.length + 1;
   let some = 0;
   for (let i = 0; i <= length; i += 1) {
