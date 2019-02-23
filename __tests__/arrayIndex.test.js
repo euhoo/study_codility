@@ -1,5 +1,5 @@
 import findSingleIndex from '../src/bin/arrayIndex';
-// намерено не проверяю,если введенное число не число
+
 const arr5 = [1, 2, 3, 3, 2, 5, 1];
 const arr2 = [1, 1, 2, 3, 3, 4, 4, 5, 5];
 const arr12 = [1, 2, 1, 3, 2, 3, 4, 5, 4, 6, 5, 6, 7];
