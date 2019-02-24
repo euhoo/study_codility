@@ -12,6 +12,7 @@ export default (num) => {
         obj.max = obj.current;
         obj.current = 0;
       }
+      obj.current = 0;
     }
   }
   return obj.max;

@@ -1,9 +1,7 @@
 export default (arr) => {
-  if (arr.length === 0) return 'error';
-  let sum = 0;
   let firstSum = 0;
-  arr.forEach(item => sum += item);
-  let min = Math.max.apply(null, arr);
+  const sum = arr.reduce((acc, item) => acc + item, 0);
+  let min = Math.max.apply(null, arr)**2;
   for (let i = 0; i < arr.length - 1; i += 1) {
     firstSum += arr[i];
     const secondSum = sum - firstSum;
