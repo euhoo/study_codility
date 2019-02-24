@@ -10,21 +10,21 @@ const arrMinus22 = [1, 5, -2, -3, 3, -4]; // 2
 const arr2000 = [-1000, 1000]; // 2000
 
 test('Tape: значение существует', () => {
-  //expect(findElements(arr2)).toEqual(2);
+  expect(findElements(arr2)).toEqual(2);
 });
 
 test('Tape2: разница ноль', () => {
-  //expect(findElements(arr0)).toEqual(0);
+  expect(findElements(arr0)).toEqual(0);
 });
 test('Tape3: скраю', () => {
-  //expect(findElements(arr1)).toEqual(1);
-  //expect(findElements(arr3)).toEqual(3);
+  expect(findElements(arr1)).toEqual(1);
+  expect(findElements(arr3)).toEqual(3);
 });
 test('Tape4: значения одинаковые', () => {
-  //expect(findElements(arr)).toEqual(0);
+  expect(findElements(arr)).toEqual(0);
 });
 test('Tape5: есть отрицательные элементы в массиве', () => {
-  //expect(findElements(arrMinus2)).toEqual(2);
-  //expect(findElements(arrMinus22)).toEqual(2);
+  expect(findElements(arrMinus2)).toEqual(2);
+  expect(findElements(arrMinus22)).toEqual(2);
   expect(findElements(arr2000)).toEqual(2000);
 });

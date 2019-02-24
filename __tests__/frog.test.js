@@ -10,3 +10,7 @@ test('Frog: прыгать нужно(X<Y)', () => {
 test('Frog: изначально уже на том берегу(X=Y)', () => {
   expect(findSingleIndex(90, 90, 20)).toEqual(0);
 });
+
+test('Frog: маленькие прыжки', () => {
+  expect(findSingleIndex(3, 999111321, 7)).toEqual(142730189);
+});
