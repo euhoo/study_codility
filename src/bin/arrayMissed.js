@@ -2,11 +2,8 @@ export default (arr) => {
   let sum = 0;
   // eslint-disable-next-line no-return-assign
   arr.forEach(item => sum += item);
-  const length = arr.length + 1;
-  let some = 0;
-  for (let i = 0; i <= length; i += 1) {
-    some += i;
-  }
+  const l = arr.length + 1;
+  const some = l * (l + 1) / 2;
   return some - sum;
 };
 
