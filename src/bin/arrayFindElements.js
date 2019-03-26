@@ -5,7 +5,7 @@ export default (arr) => { // n-начало k-конец
   const res = [];
   for (let i = n; i < k; i += 1) {
     if (!set.has(i)) res.push(i);
-    //if (!arr.includes(i)) res.push(i); // так медленнее
+    // if (!arr.includes(i)) res.push(i); // так медленнее
   }
   return res;
 };
